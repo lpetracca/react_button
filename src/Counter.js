@@ -8,10 +8,10 @@ const Counter = props => {
     function sumarCinco() {
       setCounter(counter + 5)
     }
-    return (<p>
+    return (<div>
         {counter}
-        <Btn funcion ={sumarCinco}> {props.children} </Btn>
-    </p>);
+        <Btn funcion={sumarCinco}> {props.children} </Btn>
+    </div>);
 }
 
 export default Counter;
